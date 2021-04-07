@@ -1,7 +1,7 @@
 from scipy import stats
 import matplotlib.pyplot as plt
 import pandas as pd
-df=pd.read_csv("Radings.csv")
+df=pd.read_csv("https://readinglubrigo1.s3.us-east-2.amazonaws.com/Radings.csv")
 X = df.iloc[:, 0:1].values
 y = df.iloc[:, 1].values
 
