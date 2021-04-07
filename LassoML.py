@@ -30,7 +30,7 @@ print(quality)
 from scipy import stats
 import matplotlib.pyplot as plt
 import pandas as pd
-df=pd.read_csv("Radings.csv")
+df=pd.read_csv("https://readinglubrigo1.s3.us-east-2.amazonaws.com/Radings.csv")
 x=[df["IRatio"]]
 y=[df["Milage"]]
 slope, intercept, r, p, std_err = stats.linregress(x, y)
