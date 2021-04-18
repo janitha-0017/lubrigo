@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lubrigo</string>
+    <string name="oil_tester">Oil Tester</string>
+    <string name="oil_recommendation">Oil Recommendation</string>
+</resources>
