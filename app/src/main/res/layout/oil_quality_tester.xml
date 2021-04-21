@@ -6,16 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/round"
+        android:onClick="endTest"
+        android:shape="oval"
+        android:text="End Test"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:srcCompat="@drawable/meter"
-        android:contentDescription="TODO" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"

@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
             Python.start(new AndroidPlatform(this));
         }
         System.out.println("Output begins here");
-        python();
+
+//        python();
         System.out.println("Output ends here");
 
 
@@ -30,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    private String python(){
-        Python python = Python.getInstance();
-        PyObject pythonFile = python.getModule("LassoML");
-        return pythonFile.callAttr("viz_polymonial").toString();
-    }
+//
+//    private String python(){
+//        Python python = Python.getInstance();
+//        PyObject pythonFile = python.getModule("LassoML");
+//        return pythonFile.callAttr("viz_polymonial").toString();
+//    }
 
 
 
