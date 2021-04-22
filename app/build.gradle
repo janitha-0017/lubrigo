@@ -1,12 +1,9 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.chaquo.python'
+
 
 android {
 
     sourceSets {
-        main {
-            python.srcDir "src/main/python"
-        }
     }
     compileSdkVersion 29
 
@@ -19,22 +16,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        ndk {
-            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
-        }
-        python {
-            pip {
-                install "numpy"
-                install "pandas"
-                install "scipy"
-                install "matplotlib"
-                install "sklearn"
-
-            }
-
-            buildPython "/usr/bin/python"
-            buildPython "python3"
-        }
     }
 
     buildTypes {
@@ -52,5 +33,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.amazonaws:aws-android-sdk-core:2.16.8'
+    implementation 'com.amazonaws:aws-android-sdk-lambda:2.16.8'
+    implementation 'com.squareup.okhttp3:okhttp:4.1.0'
+
+
+    implementation 'commons-logging:commons-logging-api:1.1'
 
 }
