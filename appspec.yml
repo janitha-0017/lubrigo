@@ -8,7 +8,7 @@ files:
     # destination: /home/ubuntu/myapp
     destination: /tmp
 
-    # hooks:
-    #   ApplicationStart:
-    #     -location: starspring.sh
-    #      runas: ubuntu
+    hooks:
+      ApplicationStart:
+        -location: starspring.sh
+         runas: root
