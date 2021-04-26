@@ -3,7 +3,8 @@ os: linux
 files:
   # - source: ./
    # - source: target
-  - source: target/Lubrigo-0.0.1-SNAPSHOT.jar
+    - source: Lubrigo/target/Lubrigo-0.0.1-SNAPSHOT.jar
+#   - source: target/Lubrigo-0.0.1-SNAPSHOT.jar
   # source: ./Lubrigo-0.0.1-SNAPSHOT.jar
     # destination: /home/ubuntu/myapp
     destination: /tmp
