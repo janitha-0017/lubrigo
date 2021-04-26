@@ -14,6 +14,7 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/Lubrigo-0.0.1-SNAPSHOT.jar
+#     - target/Lubrigo-0.0.1-SNAPSHOT.jar
+    - ./target/Lubrigo-0.0.1-SNAPSHOT.jar
     - appspec.yml
   discard-paths: yes
